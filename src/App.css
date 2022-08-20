@@ -1,38 +1,68 @@
-.App {
+.DiaryEditor {
+  border: 1px solid navy;
+  border-radius: 2ex;
+  text-align: center;
+  padding: 20px;
+}
+
+.DiaryEditor input,
+textarea {
+  margin-bottom: 25px;
+  width: 450px;
+  padding: 15px;
+}
+
+.DiaryEditor textarea {
+  height: 150px;
+}
+
+.DiaryEditor select {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.DiaryEditor button {
+  width: 450px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3ex;
+}
+
+/* List */
+
+.DiaryList {
+  border: 1px solid navy;
+  border-radius: 2ex;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.DiaryList h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Item */
+
+.DiaryItem {
+  background-color: rgb(255, 253, 230);
+  margin-bottom: 15px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DiaryItem .info {
+  border-bottom: 1px solid rgb(255, 200, 194);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.DiaryItem .date {
+  color: gray;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DiaryItem .content {
+  font-weight: bolder;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
